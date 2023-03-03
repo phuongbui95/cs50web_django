@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Tasks</title>
-    </head>
-    <body>
-        <h1>Add Tasks</h1>
-        <form>
-            <input type="text" name="task">
-            <input type="submit">
-        </form>
+{% extends "tasks/layout.html" %}
 
-    </body>
-</html>
+{% block body %}
+    <h1>Add Tasks</h1>
+    <form>
+        <input type="text" name="task">
+        <input type="submit">
+    </form>
+{% endblock %}
