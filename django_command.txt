@@ -1,0 +1,41 @@
+1. Create a django project:
+django-admin startproject "project name"
+
+2. Run an application in django:
+python3 manage.py runserver
+=> You may re-run this command multiple time after editing your files!
+
+3. Create an app in django project:
+python3 manage.py startapp "app name"
+
+	4. If add a new app to django project, 
+	go to setting.py/add app's name in INSTALLED APPS
+
+	5. views.py is where to design the frontend of Django app
+
+	6. urls.py can be additionally created in each app to manage apps' own urls
+	=> After creating app's urls.py, remember to update project's urls.py as well.
+
+	7. Use "render" instead of "HttpRespone to run an entire html"
+
+8. Input a value into html tag => {{ your input }}
+
+9. Create conditional statements:
+{% if your condition %}
+   html
+{% else %}
+   html
+{% endif %}
+
+10. Static file = file tĩnh, Dynamic file = file động.
+
+11. In Django app, create a "Static" folder to store static files.
+
+12. Create a loop statement:
+{% for  in  %}
+   html
+{% endfor &}
+
+13. Template inheritance: if generating multiple html files with the same layout, Django allows to utilize a "layout.html"
+
+
