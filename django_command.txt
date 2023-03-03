@@ -48,3 +48,6 @@ python3 manage.py startapp "app name"
     </body>
 </html>
 
+14. Django finds the same url then adjust:
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#url
+

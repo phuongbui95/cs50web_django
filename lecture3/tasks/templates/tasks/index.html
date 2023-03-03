@@ -6,4 +6,11 @@
             <li>{{ task }}</li>
         {% endfor %}
     </ul>
+    <!-- <a href="/tasks/add">Ask a New Task</a> -->
+    {% url 'add' as the_url %}
+    <a href="{{ the_url }}">Ask a New Task {{ the_url }}</a>
 {% endblock %}
+
+<!-- cannot leave this comment in the block??? -->
+<!-- <a href="{% url 'add' %}">Ask a New Task</a>     -->
+<!-- Read this =>https://docs.djangoproject.com/en/dev/ref/templates/builtins/#url -->
