@@ -6,9 +6,9 @@
             <li>{{ task }}</li>
         {% endfor %}
     </ul>
-    <!-- <a href="/tasks/add">Ask a New Task</a> -->
-    {% url 'add' as the_url %}
-    <a href="{{ the_url }}">Ask a New Task {{ the_url }}</a>
+    <a href="/tasks/add">Ask a New Task</a>
+    
+    <!-- <a href="{% url 'tasks:add'%}">Ask a New Task</a> -->
 {% endblock %}
 
 <!-- cannot leave this comment in the block??? -->
