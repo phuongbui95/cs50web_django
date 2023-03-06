@@ -1,16 +1,16 @@
 {% extends "tasks/layout.html" %}
 
 {% block body %}
+    <h1>Tasks:</h1>
     <ul>
         {% for task in tasks %}
             <li>{{ task }}</li>
         {% endfor %}
     </ul>
-    <a href="/tasks/add">Ask a New Task</a>
     
-    <!-- <a href="{% url 'tasks:add'%}">Ask a New Task</a> -->
+    <a href="{% url 'add' %}">Add a New Task</a>
+    
 {% endblock %}
 
-<!-- cannot leave this comment in the block??? -->
-<!-- <a href="{% url 'add' %}">Ask a New Task</a>     -->
-<!-- Read this =>https://docs.djangoproject.com/en/dev/ref/templates/builtins/#url -->
+<!-- <a href="/tasks/add">Add a New Task</a> -->
+<!-- <a href="{% url 'tasks:add' %}">Add a New Task</a> -->
