@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> Tasks </title>
-    </head>
-    <body>
-        <h1>Ask Task</h1>
-        dkfjkdjf
-        <!-- <form>
-            <input type="text" name="task">
-            <input type="submit">
-        </form> -->
-    </body>
-</html>
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+    <h1>Ask Task</h1>
+    <form>
+        <input type="text" name="task">
+        <input type="submit">
+    </form>
+    <a href="{% url 'index' %}">Back to Tasks</a>
+{% endblock %}
