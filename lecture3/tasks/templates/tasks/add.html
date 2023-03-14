@@ -1,7 +1,7 @@
 {% extends "tasks/layout.html" %}
 
 {% block body %}
-    <h1>Ask Task</h1>
+    <h1>Add Task</h1>
     <form action="{% url 'tasks:add' %}" method="post">
         {% csrf_token %}
         <!-- <input type="text" name="task"> -->
